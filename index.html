@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microbiology Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="activation">
+      <h1>Welcome to Microbiology Flashcards</h1>
+      <p>Please enter your activation key to proceed:</p>
+      <input type="text" id="activationKey" placeholder="Enter activation key">
+      <button id="activateBtn">Activate</button>
+      <p id="errorMsg"></p>
+    </div>
+
+    <div class="main-app hidden">
+      <header>
+        <h1>Flashcards</h1>
+        <button id="themeToggle">Switch to Light Theme</button>
+      </header>
+      <div class="controls">
+        <button id="randomizerBtn">Random Bacteria</button>
+        <div id="randomBacteria" class="hidden">
+          <h2>Random Pick:</h2>
+          <p id="randomBacteriaName"></p>
+          <p id="randomBacteriaInfo"></p>
+        </div>
+      </div>
+      <div id="flashcards"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
